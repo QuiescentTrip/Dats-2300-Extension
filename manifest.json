@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Code Modifier Extension",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.cs.hioa.no/~ulfu/appolonius/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
