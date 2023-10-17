@@ -1,18 +1,19 @@
 {
     "manifest_version": 3,
-    "name": "Code Modifier Extension",
-    "version": "1.0",
+    "name": "DATS2300-Bok Readability",
+    "version": "0.1",
+    "description": "Simple extension that adds better variable names to DATS2300 book with use of GPT3.5",
     "permissions": ["activeTab"],
-    "background": {
-      "service_worker": "background.js"
-    },
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      },
     "content_scripts": [
       {
         "matches": ["https://www.cs.hioa.no/~ulfu/appolonius/*"],
         "js": ["content.js"]
       }
-    ],
-    "action": {
-      "default_popup": "popup.html"
-    }
+    ]
   }
