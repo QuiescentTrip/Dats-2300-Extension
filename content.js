@@ -1,4 +1,4 @@
-let OPEN_AI_KEY =
+let OPEN_AI_KEY = "<YOUR API KEY>"
 
 const str = `
 Oppgave: Forbedre lesbarheten og forståelsen av følgende kodeeksempel, 
